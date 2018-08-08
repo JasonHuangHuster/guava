@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.google.guava</groupId>
     <artifactId>guava-parent</artifactId>
-    <version>20.0</version>
+    <version>20.0_kilim</version>
   </parent>
   <artifactId>guava</artifactId>
   <packaging>bundle</packaging>
@@ -42,6 +42,12 @@
     </dependency>
     <!-- TODO(cpovirk): does this comment belong on the <dependency> in <profiles>? -->
     <!-- TODO(cpovirk): want this only for dependency plugin but seems not to work there? Maven runs without failure, but the resulting Javadoc is missing the hoped-for inherited text -->
+
+    <dependency>
+      <groupId>kilim</groupId>
+      <artifactId>kilim</artifactId>
+      <version>1.0.5</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
